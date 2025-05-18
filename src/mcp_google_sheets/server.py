@@ -878,4 +878,9 @@ def share_spreadsheet(spreadsheet_id: str,
 
 def main():
     # Run the server
-    mcp.run()
+    print("Starting Google Spreadsheet MCP server...")
+    port = mcp.run()
+    print(f"Server is running on port {port}")
+
+if __name__ == "__main__":
+    main()
